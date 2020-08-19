@@ -63,13 +63,6 @@ def all_supplies_in_holidays(holiday_hash)
     
     value.each do |key, value|
       puts "  #{key.to_s.split(' ').map{|word| word.capitalize}.join(' ')}: #{value.join(', ')}"
-      if key.to_s.split(" ").size == 1
-        puts "  #{key.to_s.capitalize}: #{value.join(', ')}"
-      else
-        binding.pry
-        key.to_s.split(' ').map{|word| word.capitalize}
-        puts "  #{key.to_s.split.join}: #{value.join(', ')}"
-      end
     end
   end
 end
