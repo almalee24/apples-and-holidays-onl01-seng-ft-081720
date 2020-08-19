@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
         puts "  #{key.to_s.capitalize}: #{value.join(', ')}"
       elsif holiday.size >= 2
       binding.pry
-        key.to_s.split.map do |word|
+        holiday.map do |word|
           word.capitalize
         end
         puts "  #{key.join}: #{value.join(', ')}"
